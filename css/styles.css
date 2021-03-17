@@ -136,12 +136,12 @@ body {
 }
 /* ====================== HERO ==============================================*/
 .hero{
-
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 95px;
 
  height: 600px;
+ width: 1600px;
  background-image:url(../images/hero/img-overlay-bg.png),
   url(../images/hero/img-overlay.png); 
  text-align: center;
@@ -185,6 +185,7 @@ body {
   cursor: pointer;
 }
 /* ====================== FEATURES ===========================================*/
+
 .container .features-list {
   display: flex;
   justify-content: space-around;
@@ -197,7 +198,6 @@ body {
   padding-top: 30px;
   text-transform: uppercase;
 }
-
 .features-list .text {
   margin-top: 10px;
   margin-bottom: 0;
@@ -267,6 +267,43 @@ body {
 }
 .team-list .item {
   background-color: #ffffff;
+}
+/* ====================== team-sotial ========================================*/
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 30px;
+
+  width: 206px;
+  height: 44px;
+}
+.social-link {
+  display: flex;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--akcent-color);
+}
+.social-logo {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+.social-link:hover .social-logo,
+.social-link:focus .social-logo {
+  background-color: var(--akcent-color);
+  fill: white;
 }
 /* ======================fOOTER=========================================*/
 .footer {
