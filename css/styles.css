@@ -41,6 +41,18 @@ body {
   margin: 0;
 }
 /* ====================== Components ================================*/
+
+.container {
+  margin: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section {
+  margin: auto;
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
 .logo {
   display: block;
   font-family: Raleway, sans-serif;
@@ -55,17 +67,6 @@ body {
 }
 .logo-white {
   color: #ffffff;
-}
-.section {
-  margin: auto;
-  padding-top: 95px;
-  padding-bottom: 95px;
-}
-.container {
-  margin: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 /* ====================== HEADER =====================================*/
 /* ====================== HEADER-NAVI =====================================*/
@@ -140,10 +141,10 @@ body {
   margin-right: auto;
   padding-bottom: 95px;
 
-  height: 600px;
-  background-color: var(--baner-color);
-  /* background-image: url(../images/hero/Img-overlay.png); */
-  text-align: center;
+ height: 600px;
+ background-image:url(../images/hero/img-overlay-bg.png),
+  url(../images/hero/img-overlay.png); 
+ text-align: center;
 }
 .hero-title {
   margin: 0;
