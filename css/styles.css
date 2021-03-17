@@ -142,8 +142,7 @@ body {
 
  height: 600px;
  width: 1600px;
- background-image:url(../images/hero/img-overlay-bg.png),
-  url(../images/hero/img-overlay.png); 
+ background-image:url(../images/hero/img-overlay.png); 
  text-align: center;
 }
 .hero-title {
