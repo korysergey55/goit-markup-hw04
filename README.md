@@ -1,4 +1,2 @@
-Container.
-Позиционирование элементов margin,padding.
-Flexbox.
-Компаоненты.
+Вставка фото.
+SVG Sprite
