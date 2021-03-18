@@ -41,7 +41,16 @@ body {
   margin: 0;
 }
 /* ====================== Components ================================*/
-
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
 .container {
   margin: auto;
   width: 1200px;
@@ -68,6 +77,7 @@ body {
 .logo-white {
   color: #ffffff;
 }
+
 /* ====================== HEADER =====================================*/
 /* ====================== HEADER-NAVI =====================================*/
 .header {
@@ -348,6 +358,10 @@ body {
   fill: var(--akcent-color);
 }
 /* ======================fOOTER=========================================*/
+.footer .container {
+  display: flex;
+  justify-content: start;
+}
 .footer {
   padding-bottom: 60px;
   padding-top: 60px;
@@ -372,6 +386,46 @@ body {
 }
 .contact:not(:last-child) {
   margin-bottom: 9px;
+}
+
+/* ======================fOOTER-social=========================================*/
+.footer-social-title {
+  padding-left: 70px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-left: 70px; */
+  margin-left: 70px;
+}
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+
+  width: 44px;
+  height: 44px;
+  fill: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--akcent-color);
 }
 /* ======================Partfolio=======================================*/
 .partfolio-title {
